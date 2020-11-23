@@ -1,6 +1,15 @@
 package go.livespring.livespring1;
 
-public class Transaction {
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.io.Serializable;
+
+@Getter
+@Setter
+@NoArgsConstructor // <--- THIS is it
+public class Transaction  implements Serializable {
     private int type;
     private int accountNumber;
     private int currency;
