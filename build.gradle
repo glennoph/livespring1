@@ -27,6 +27,8 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testCompile 'io.rest-assured:rest-assured'
+	testImplementation 'io.rest-assured:json-path'
+	testImplementation 'io.rest-assured:json-schema-validator'
 }
 
 test {
