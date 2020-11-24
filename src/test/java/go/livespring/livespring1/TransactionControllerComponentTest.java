@@ -35,7 +35,7 @@ class TransactionControllerComponentTest {
 
     @Test
     void getTransactions() throws Exception {
-        String GETURL= "/transactions?accountNumber=1";
+        String GETURL= "/transactions/1";
         given().port(port).when().get(GETURL).then().assertThat().statusCode(200);
     }
 

@@ -8,7 +8,7 @@ import java.util.List;
 @Service
 public class TransactionService {
 
-    public List<Transaction> findAllByAccountNumber() {
+    public List<Transaction> findAllByAccountNumber(String accountNumber) {
         List<Transaction> transactionList = new ArrayList<Transaction>();
         transactionList.add(new Transaction(1001, 5, 2,
                 "merch-a", 9991));

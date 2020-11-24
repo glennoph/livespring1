@@ -35,7 +35,7 @@ class TransactionControllerIntegrationTest {
 
     @Test
     void getTransactions() throws Exception {
-        this.mockMvc.perform(get("/transactions?accountNumber=11"))
+        this.mockMvc.perform(get("/transactions/11"))
                 .andDo(print())
                 .andExpect(status().isOk());
     }
