@@ -14,7 +14,6 @@ public class TransactionController {
     @GetMapping(path = "/transactions")
     public List<Transaction> getTransactions(@RequestParam(value = "accountNumber")
                                                      int accountNumber) {
-
         return new TransactionService().findAllByAccountNumber();
     }
 
